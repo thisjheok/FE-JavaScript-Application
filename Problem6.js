@@ -9,4 +9,4 @@ const arr = [{ part: "fe", name: "홍현", age: 26},
   let ages = fes.sort(function(a,b){
     return a.age-b.age;
   })
-let upper = arr.map((a)=>a.part.toUpperCase());
+  let upper = arr.map((a)=>a.part.toUpperCase());
