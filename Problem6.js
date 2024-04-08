@@ -6,7 +6,11 @@ const arr = [{ part: "fe", name: "홍현", age: 26},
   { part: "staff", name: "나현", age: 24}];
 
   let fes = arr.filter((le)=>le.part === "fe");
+
   let ages = fes.sort(function(a,b){
-    return a.age-b.age;
+    return b.age-a.age;
   })
-  let upper = arr.map((a)=>a.part.toUpperCase());
+  
+  const finalArr = ages.map(item => {
+  return { ...item, part: item.part.toUpperCase() };
+});
